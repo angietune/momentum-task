@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="images/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="owfont-regular.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
+  <title>Momentum</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <audio preload=”metadata”></audio>
+        <button class="play-prev player-icon"></button>
+        <button class="play-next player-icon"></button>
+        <button class="play player-icon"></button>
+        <div id="track_time">
+          <span class="seek">0:00</span>
+        </div>
+        <input type="range" class="progress" value="0" min="0" max="100" step="1"></input>
+        <span class="total">0:00</span>
+        <input type="range" class="volume" value="0.3" step="0.1" min="0" max="1"></input>
+      </div>
+      <ul class="play-list"></ul>
+      <div class="close close-player"></div>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" placeholder="Minsk" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+      <div class="close close-weather"></div>
+
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"><span class="hours"></span>:<span class="minutes"></span>:<span class="seconds"></span>
+      <div class="close close-time"></div>
+    </time>
+    <date class="date">
+    </date>
+    <div class="greeting-container">
+      <div class="greeting-wrapper">
+        <span class="greeting"></span>
+        <input type="text" class="yourname" />
+      </div>
+      <div class="close close-greeting"></div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="quotes">
+      <button class="change-quote"></button>
+      <div>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+      <div class="close close-quote"></div>
+    </div>
+    <div class="settings"></div>
+    <div class="todo-wrapper">
+      <div class="todo-modal" id="modal-todo">
+        <ul class="todo-list"></ul>
+        <div class="new-todo">
+          <input type="text" class="todo-input" placeholder="Enter ToDo">
+        </div>
+        <div class="todo"></div>
+      </div>
+      <div class="close close-todo"></div>
+    </div>
+    <div class="settings-modal" id="settings-block">
+      <div class="lang-row">
+        <span>eng</span>
+        <label class="form-switch">
+          <input type="checkbox">
+          <i></i>
+        </label>
+        <span>rus</span>
+      </div>
+      <div class="photo-source">
+        <p>Background image:</p>
+        <input type="radio" id="github" name="bg" value="github" checked>
+        <label for="github">github</label><br>
+        <input type="radio" id="flickr" name="bg" value="flickr">
+        <label for="github">flickr</label><br>
+        <input type="radio" id="pixabay" name="bg" value="pixabay">
+        <label for="senior">pixabay</label>
+      </div>
+      <div class="close close-all"></div>
+    </div>
+  </footer>
+</body>
+
+</html>
